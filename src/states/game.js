@@ -1,13 +1,13 @@
 /* globals __DEV__ */
 import Phaser from 'phaser'
-import Mushroom from '../sprites/Mushroom'
+import Mushroom from '../game-objects/mushroom'
 
-export default class extends Phaser.State {
+class Game extends Phaser.State {
   init () {}
   preload () {}
 
   create () {
-    const bannerText = 'Phaser + ES6 + Webpack'
+    const bannerText = 'Phaser Template'
     let banner = this.add.text(this.world.centerX, this.game.height - 80, bannerText, {
       font: '40px Bangers',
       fill: '#77BFA3',
@@ -33,3 +33,5 @@ export default class extends Phaser.State {
     }
   }
 }
+
+export default Game
